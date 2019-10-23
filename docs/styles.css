@@ -33,6 +33,7 @@ h1{
 .centrarmain{
     display: grid;
     justify-items: center;
+    min-height: 400px;
 }
 section div{
     text-align: center;
