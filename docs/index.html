@@ -5,16 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>AG-VirtualDies</title>
+    <script src="https://kit.fontawesome.com/7156f13c41.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/styles.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body class="back">
-   <header class="centrar">
+   
+    <nav class="navpos backcol">
+        <a href="index.html" class="itema"><i class="fas fa-dice"></i> dies</a>
+        <a href="pjs.html"><i class="fas fa-heart"></i> pj's health</a>
+    </nav>
+   
+    <section class="centrar backcol">
         <h1 class="">Bienvenidos Aventuros</h1>
         <h4 class="">Prueba suerte y determina tu destino</h4>
-   </header>
+   </section>
    
     <main class="centrarmain cmain">
         <section id="principal" class="">
@@ -33,41 +40,10 @@
         </section>    
     </main>
     <footer>
-        <p>VirtualDies 1.0 - Aguará Technologies - 2019</p>
+        VirtualDies 1.0 - Aguará Technologies - 2019
+        <div id="prueba"></div>
     </footer>
-    <script>
-     const rndm = (n) => {
-         let a = Math.trunc((Math.random()*n)+1);
-         return a;
-     }
-    
-    let d2 = document.getElementById("d2");
-    let d4 = document.getElementById("d4");
-    let d6 = document.getElementById("d6");
-    let d10 = document.getElementById("d10");
-    let d20 = document.getElementById("d20");
-    let d100 = document.getElementById("d100");
-    let bt = [document.getElementById("bd2"), document.getElementById("bd4"),document.getElementById("bd6"),document.getElementById("bd10"),document.getElementById("bd20"),document.getElementById("bd100")];
-    bt[0].onclick = function(){
-       let tipo = (rndm(2)%2)? "Verdadero":"Falso";
-       d2.innerHTML = tipo;
-    }
-    bt[1].onclick = function(){
-        d4.innerHTML = rndm(4);
-    }
-    bt[2].onclick = function(){
-        d6.innerHTML = rndm(6);
-    }
-    bt[3].onclick = function(){
-        d10.innerHTML = rndm(10);
-    }
-    bt[4].onclick = function(){
-        d20.innerHTML = rndm(20);
-    }
-    bt[5].onclick = function(){
-        d100.innerHTML = rndm(100);
-    }
+    <script src="assets/scripts.js"></script>
 
-    </script>
 </body>
 </html>
