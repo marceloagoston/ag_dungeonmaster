@@ -104,4 +104,12 @@ footer{
         padding-top: 0;
         padding-bottom: 0;
     }
+    .btsize{
+        height: 8vh;
+        width: 8vh;
+    }
+    .lifesize{
+        height: 8vh;
+        width: 20vh;
+    }
 }
