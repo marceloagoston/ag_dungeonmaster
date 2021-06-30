@@ -6,9 +6,20 @@
     font-weight: 600;
     font-family: 'Dosis', sans-serif;
 }
+#footer {
+    position:fixed;
+    bottom:0;
+    width:100%;
+    height:60px;   /* Height of the footer */
+    background:rgb(0, 0, 0);
+ }
 a{
     text-decoration: none;
     color: white;
+}
+a:hover{
+    text-decoration: none;
+    color: rgb(191, 191, 191);
 }
 .backcol{
     background:rgba(0,0,0,0.4);
@@ -59,13 +70,26 @@ h1{
 section div{
     text-align: center;
     background: rgba(0,0,0,0.4);
+}
+
+.centrardiv{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.gold{
-   background:radial-gradient(ellipse farthest-corner at left top, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+.activo{
+    text-decoration: underline;
 }
+.gold{
+    background:radial-gradient(ellipse farthest-corner at left top, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+ }
+ .gold:hover{
+    background:radial-gradient(ellipse farthest-corner at left top, #5d4a1f 25%, #5d4a1f 62.5%, #D1B464 100%);
+ }
+ .gold:active{
+    background:radial-gradient(ellipse farthest-corner at left top, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+    top: 3px;
+ }
 .btsize{
     height: 12vh;
     width: 12vh;
@@ -77,12 +101,27 @@ section div{
 footer{
     background-color:black;
     height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position:absolute;
     bottom:0;
     width:100%;
+}
+.pie{
+    text-align: center; 
+    padding-top: 1%;
+}
+.sectionabout{
+    padding-top: 3%; 
+    padding-bottom: 3%; 
+    width: 80%; 
+    margin: auto; 
+    margin-bottom: 60px;
+}
+.divabout{
+    padding-top:10%; 
+    padding-bottom:10%; 
+    padding-left: 5%; 
+    padding-right: 5%; 
+    border-radius: 8px;
 }
 @media screen and (max-width: 950px) {
     h1{
@@ -95,13 +134,16 @@ footer{
         color:#e6e6e6;
     }
     footer{
-        font-size: .7rem;
+        font-size: 1rem;
+    }
+    .pie{
+        padding-top: 4%;
     }
     .cmain{
         padding: 10%;
         padding-top: 10%;
         padding-bottom: 10%;
-        padding-top: 0;
+        padding-top: 25%;
         padding-bottom: 0;
     }
     .btsize{
@@ -110,6 +152,10 @@ footer{
     }
     .lifesize{
         height: 8vh;
-        width: 20vh;
+        width: 20vw;
+    }
+    .navpos{
+        display: flex;
+        justify-content: space-around;
     }
 }
